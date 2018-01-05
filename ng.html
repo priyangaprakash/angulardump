@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang = "en-us">
+ <title>
+   About NG Directive
+ </title>
+  <head>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+	</script>
+  </head> 
+    <body>
+     <div class = "container">
+	  <header><h1><center>NG DIRECTIVE DETAILS</center></h1></header>
+	    <article>
+		 <h2><u>Angular JS extends HTML</u></h2>
+		 <p>AngularJS extends HTML with ng-directives.</p>
+		 <ul>
+		 <li><p>The <b>ng-app</b> directive defines an AngularJS application.</p></li>
+		 <li><p>The <b>ng-model</b> directive binds the value of HTML controls (input, select, textarea) to application data.</p></li>
+		 <li><p>The <b>ng-bind</b> directive binds application data to the HTML view.</p></li>
+		 <li><p>The <b>ng-init</b> directive initializes AngularJS application variables.</p></li>
+		 </ul>
+	    </article>
+	 </div>
+	 
+	 <!--
+	 Example explained:
+	 
+	 AngularJS starts automatically when the web page has loaded.
+	 The ng-app directive tells AngularJS that the <div> element is the "owner" of an AngularJS application.
+	 The ng-model directive binds the value of the input field to the application variable name.
+	 The ng-bind directive binds the innerHTML of the <p> element to the application variable name.
+	 -->
+	 <div style = "float:center;width:30%" ng-app ="" ng-init = "companyname = 'Cognizant'">
+	  Name: <input type = "text" ng-model = "name"/>
+	  <p ng-bind = "name"></p>
+	  
+	  <p>My Company name is:<span ng-bind = "companyname"></span></p>
+	  <!--
+	  Expressions are directly evaluated when it is given inside {{ }} 
+	  -->
+	  </br>
+	  <h2><b>EXPRESSIONS</b></h2>
+	  <p>The value of the 10+30 is {{10+30}}</p>
+	 </div>
+	 </br>
+	 
+	 <div style = "float:right">
+	 <a href = "index.html">Back to Index</a>
+	 </div>
+    </body>
+</html>

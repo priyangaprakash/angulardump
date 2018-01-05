@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<!--
+As per the rules of angular JS, it is mandatory to include script source as given below
+then add ng-app and then ng-model to display the text
+-->
+<html lang = "en-us">
+ <title>
+    Starting with Angular
+ </title>
+  <head>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+	</script>
+	<link type = "text/css" rel = "stylesheet" href = "style.css">
+	</link>
+  </head>
+   <body>
+   <div align = "center">
+    <h1><b><center>Play with Angular JS</center></b></h1>
+   </div> </br>
+    <div style = "float:left; width:30%">
+	 <h3><b>Angular Js: An Introduction</b></h3>
+	  <p id = "description">AngularJS is a JavaScript framework. It can be added to an HTML page with a script tag.</p>
+	     <p id = "description">AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions.</p>
+		 <p id = "description">AngularJS is a JavaScript framework. It is a library written in JavaScript.</p>
+		 <p id = "description">AngularJS is distributed as a JavaScript file,and can be added to a web page with a script tag:</p>
+		 <pre>"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"</pre> <!--make it as color-->
+		 </br></br></br>
+		  <a href = "ng.html">About "ng" Directives</a>
+		  </br>
+		  <a href = "exp.html">Expressions</a>
+		  </br>
+		  <a href = "module.html">Modules</a>
+	  </p>
+	</div>
+     <div ng-app = "" style = "float:right; width:50%">
+	  <p>Enter your Name: <input type = "text" ng-model = "name"/>
+	  <p>Hello {{name}}..Let's have fun with angular</p>
+	 </div>
+	 </br>
+	
+	 
+   </body>
+</html>

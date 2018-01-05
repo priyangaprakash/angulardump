@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang = "en-us">
+ <title>
+   Expressions
+ </title>
+  <head>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+	</script>
+  </head>
+  <body ng-app=""> 
+   <h2><center>DIFFERENT TYPES OF EXPRESSION</center></h2>
+   <!--NUMBERS-->
+   <div ng-init = "a=10;b=20" >
+     <p><b>1)Nmbers are given inside double curly braces.</b></p>
+	 <p>The value of 30*5 is {{30*5}}</p>
+	 <p>The value of already initialized variable a and b is {{a+b}}</p>
+	 </div></br>
+	<!--STRINGS-->
+	<div ng-init = "fname='pandi';lname = 'priyanga'">
+	 <p><b>2)Strings can also given inside double curly braces.</b></p>
+	 <p>My name is {{fname+" "+lname}}</p>
+   </div> 
+   <!--OBJECTS-->
+	<div ng-init = "person = {fname:'pandi',lname:'priya'}">
+	 <p><b>3)Objects in double curly braces.</b></p>
+	 <p>My last name is {{person.lname}}</p>
+   </div> 
+   <!--ARRAYS-->
+   <div  ng-init="points=[1,15,19,2,40]">
+   <p><b>4)Arrays can be called by arrayname[index]</b></p>
+     <p>The third result is {{ points[2] }}</p>
+   </div>
+   <!--CSS-->
+   <div ng-app="" ng-init="myCol='lightblue'">
+    <p><b>5)Changing the css attribute dynamically</b></p>
+   <p><b>Enter you favourite color:</b></p>
+   <input style="background-color:{{myCol}}" ng-model="myCol" value="{{myCol}}">
+   </div>
+   <div style = "float:right">
+	 <a href = "index.html">Back to Index</a>
+	 </div>
+  </body>
+</html>  
